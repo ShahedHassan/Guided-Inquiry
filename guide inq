@@ -1,0 +1,54 @@
+//Easy
+var name = "Shade"
+var name2 = "Jordon"
+console.log(`The name ${name2} is longer than ${name} by... ${name2.length - name.length} `);
+
+//Very Easy
+
+var num1 = 5
+var num2 = 6
+console.log(num2 - num1 + " is the difference between the two")
+
+//Medium
+
+let userInput = prompt(`Are you whispering, normal, or shouting?`);
+
+if (userInput == userInput.toLowerCase()){
+    console.log("Please speak up")
+
+}
+
+else if (userInput == userInput.toUpperCase()){
+    console.log("Lower your voice!")
+}
+
+else {
+    console.log("You're a normal person")
+};
+
+//Hard
+
+
+
+//Very Hard
+
+const operator = prompt('choose an operator ( either +, -, * or / ): ');
+
+const number1 = parseFloat(prompt('Enter the first number: '));
+const number2 = parseFloat(prompt('Enter the second number: '));
+
+let result;
+
+if (operator == '+') {
+    result = number1 + number2;
+}
+else if (operator == '-') {
+    result = number1 - number2;
+}
+else if (operator == '*') {
+    result = number1 * number2;
+}
+else {
+    result = number1 / number2;
+}
+console.log(`${number1} ${operator} ${number2} = ${result}`);
